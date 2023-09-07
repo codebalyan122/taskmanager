@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import styles from "../styles/Username.module.css";
 import avatar from "../assets/profile.png";
 import convertToBase64 from "../helper/convert";
-import { useMutation } from "react-query";
+// import { useMutation } from "react-query";
 
 export default function Register() {
   const [file, setFile] = useState();

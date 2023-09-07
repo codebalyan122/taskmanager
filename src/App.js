@@ -1,11 +1,11 @@
 import Register from "./components/Register";
 import PageNotFound from "./components/PageNotFound";
-import TaskComponent from "./components/TaskComponent";
+// import TaskComponent from "./components/TaskComponent";
 import Login from "./components/Login";
 import {
-  createBrowserRouter,
+
   Route,
-  RouterProvider,
+
   Routes,
 } from "react-router-dom";
 

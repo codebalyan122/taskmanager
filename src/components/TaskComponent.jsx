@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Tasks from "./Tasks";
 import AddTask from "./AddTask";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import styles from "../styles/Task.module.css";
 import axios from "axios";
