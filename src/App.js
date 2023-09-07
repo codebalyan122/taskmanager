@@ -50,7 +50,7 @@ function App() {
     if (token) {
       setIsLoggedIn(!!localStorage.getItem("token"));
     }
-  });
+  }, [isLoggedIn]);
 
   return (
     <main>
