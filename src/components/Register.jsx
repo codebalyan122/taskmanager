@@ -33,7 +33,10 @@ export default function Register() {
   };
 
   const register = async (values) => {
-    const data = await axios.post("http://localhost:8080/api/register", values);
+    const data = await axios.post(
+      "https://taskmanagerbackend13.onrender.com/api/register",
+      values
+    );
     localStorage.setItem("token", data?.data?.token);
   };
 

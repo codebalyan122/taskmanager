@@ -22,12 +22,13 @@ export default function Login() {
 
   const login = async () => {
     const data = await axios.post(
-      "http://localhost:8080/api/login",
+      "https://taskmanagerbackend13.onrender.com/api/login",
       formik.values
     );
-    setUserInformation(data);
+    setUserInformation(data?.data);
     localStorage.setItem("token", data?.data?.token);
   };
+  console.log(userInformation);
   return (
     <div className="container mx-auto">
       <Toaster position="top-center" reverseOrder={false}></Toaster>
@@ -61,7 +62,7 @@ export default function Login() {
                 to={"/profile"}
                 onClick={() => login()}
                 className={styles.btn}
-                state={userInformation}
+                state={formik.values}
               >
                 Sign IN
               </Link>
